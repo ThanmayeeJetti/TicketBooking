@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Booking App</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showMovies()">Movies</a>
+        <a href="#" onclick="showBookings()">My Bookings</a>
+    </nav>
+    <main id="main-content">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+    <script src="script.js"></script>
+<div id="add-movie-form" style="margin-top: 20px;">
+    <h3>Add New Movie</h3>
+    <form onsubmit="addMovie(event)">
+        <input type="text" id="movieTitle" placeholder="Title" required>
+        <input type="text" id="movieGenre" placeholder="Genre" required>
+        <input type="number" id="movieDuration" placeholder="Duration (minutes)" required>
+        <button type="submit">Add Movie</button>
+    </form>
+</div>
+</body>
+</html>
